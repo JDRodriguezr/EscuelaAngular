@@ -1,0 +1,49 @@
+<div class="bg-component">
+    <div class="form">
+        <mat-card class = "card">
+        <mat-card-title>Register Classroom</mat-card-title>
+            <mat-card-content>
+                <div class="container">
+                    <mat-form-field>
+                        <input
+                        [(ngModel)]= "registerData.code"
+                        matInput
+                        placeholder="Classroom code (e.g C-1)"
+                        required
+                        
+                        />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input
+                        [(ngModel)]= "registerData.slots"
+                        matInput
+                        type="integer"
+                        placeholder="Max number of students"
+                        required
+                        
+                        />
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input
+                        [(ngModel)]= "registerData.teacher"
+                        matInput
+                        type="String"
+                        placeholder="Assigned teacher"
+                        required
+                        
+                        />
+                    </mat-form-field>
+                    
+                </div>
+            </mat-card-content>
+            <mat-card-actions>
+                <button (click)="registerClassroom()" 
+                class="button colorButton"
+                mat-raised-button
+                >
+                    Register
+                </button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
