@@ -10,7 +10,7 @@ import { RegisterTeacherComponent } from './home/register-teacher/register-teach
 const routes: Routes = [
   {
     path: '', //Ruta inicial de la pagina 
-    component: RegisterClassroomComponent, //Carga de X componente
+    component: RegisterStudentComponent, //Carga de X componente
     pathMatch: 'full', //Debe estar 10/10
   },
   {

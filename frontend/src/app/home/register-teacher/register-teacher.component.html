@@ -15,19 +15,9 @@
                     </mat-form-field>
                     <mat-form-field>
                         <input
-                        [(ngModel)]= "registerData.classes"
+                        [(ngModel)]= "registerData.className"
                         matInput
                         placeholder="Classes to give (e.g Biology, History)"
-                        required
-                        
-                        />
-                    </mat-form-field>
-                    <mat-form-field>
-                        <input
-                        [(ngModel)]= "registerData.teacher"
-                        matInput
-                        type="String"
-                        placeholder="Assigned teacher"
                         required
                         
                         />
@@ -37,7 +27,7 @@
                         [(ngModel)]= "registerData.sex"
                         matInput
                         type="String"
-                        placeholder="Assigned teacher"
+                        placeholder="Sex"
                         required
                         
                         />
